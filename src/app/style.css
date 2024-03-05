@@ -1,0 +1,100 @@
+/*
+colors:
+#4568dc soft blue
+#b06ab3 blue
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/*
+Regular 400
+Bold 700
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.body {
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.apresentacao__slogan__conteiner {
+    padding-left: 100px;
+}
+
+.apresentacao__slogan {
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+
+.apresentacao__slogan__conteiner__titulo {
+    /* border: 2px solid red; */
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.apresentacao__slogan__conteiner__subtitulo {
+    /* border: 2px solid yellow; */
+    font-size: 19px;
+    width: 630px;
+}
+
+.apresentacao__slogan__conteiner__link__botao {
+
+    color: black;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 15px;
+    height: 45px;
+    width: 140px;
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.apresentacao__historia {
+    height: 300px;
+    background: #0F172A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    text-align: center;
+}
+
+.apresentacao__historia__imagem{
+    width: 400px;
+    padding: 40px;
+}
+
+.apresentacao__historia__imagem__sobre{
+    width: 1000px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
