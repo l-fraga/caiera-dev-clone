@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Clone Caiera Dev BR</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
-<header>
 
-</header>
-<main>
-
-    <body>
+<body>
+    <main>
         <section class="apresentacao__slogan">
             <div class="apresentacao__slogan__conteiner">
                 <h1 class="apresentacao__slogan__conteiner__titulo"><strong>Caiera Dev, Inovação Agora</strong></h1>
@@ -22,24 +20,116 @@
                     Caiera Dev é a ponte para seu sucesso digital.
                 </h6>
 
-                <button class="apresentacao__slogan__conteiner__link__botao" href="https://api.whatsapp.com/send?phone=SEU-NUMERO">
-                    <strong>Faça um orçamento</strong>
+                <button onclick="" class="apresentacao__slogan__conteiner__link__botao">
+                    <a class="btnWhatsapp" href="https://api.whatsapp.com/send?phone=51-9966048411"><strong>Faça um orçamento</strong></a>
+                    </button>
+
                 </button>
+                <img id="flechinha" src="..\..\assests\images\arrow.svg" alt="">
             </div>
         </section>
-        <section class="apresentacao__historia">
-            <img class="apresentacao__historia__imagem" src="..\..\assests\images\white_logo_transparent_background-copy-p-2600.png" alt="caiera.png">
-            <p class="apresentacao__historia__imagem__sobre"><strong>Na Caiera Dev</strong>, construimos mais do que software; construimos confiança. Com quatro anos de atuação
-            no mercado, nossa especialidade é fornecer uma arquitetura de software sólida, consultoria estratégica, e integrações eficientes, tudo entregue com agilidade.
-            Estamos sempre prontos para atender suas necessidades, com suporte disponível 24 horas por dia, garantindo que sua operação
-            nunca pare. Escolha a parceria que entende a importância da confiança na tecnologia.</p>
+        <section class="apresentacao__sobre">
+            <img class="apresentacao__sobre__imagem"
+                src="..\..\assests\images\white_logo_transparent_background-copy-p-2600.png" alt="caiera.png">
+            <p class="apresentacao__sobre__paragrafo"><strong>Na Caiera Dev</strong>, construimos mais do que software;
+                construimos confiança. Com quatro anos de atuação no mercado, nossa especialidade é fornecer uma
+                arquitetura de software sólida, consultoria estratégica,
+                e integrações eficientes, tudo entregue com agilidade.
+                Estamos sempre prontos para atender suas necessidades, com suporte disponível 24 horas por dia,
+                garantindo que sua operação nunca pare. Escolha a parceria que entende a importância da confiança na
+                tecnologia.</p>
         </section>
+        <section class="apresentacao__metricas">
+            <div class="apresentacao__metricas__consultoria">
+                <p class="apresentacao__metricas__consultoria__titulo">
+                    CONSULTORIA
+                </p>
+                <h3>
+                    <strong>Orientação Estratégica</strong>
+                </h3>
+                <p class="apresentacao__metricas__consultoria__paragrafo">
+                    Nossas consultoria especializada navega pela complexidade tecnológica para impulsionar
+                    atransformação digital do seu negócio.</p>
+            </div>
+            <div class="apresentacao__metricas__integracoes">
+                <p class="apresentacao__metricas__integracoes__titulo">
+                    INTEGRAÇÕES
+                </p>
+                <h3><strong>Conexões que <br>Impulsionam</strong></h3>
+                <p class="apresentacao__metricas__integracoes__paragrafo">
+                    Criamos Integrações de APIs com alto desempenho para unificar
+                    seus sistemas e acelerar o crescimento empresarial.
+                </p>
+            </div>
+            <div class="apresentacao__metricas__arquitetura">
+                <p class="apresentacao__metricas__arquitetura__titulo">ARQUITETURA</p>
+                <h3><strong>Estruturas para o <br> Futuro</strong></h3>
+                <p class="apresentacao__metricas__arquitetura__paragrafo">
+                    Desenhamos arquiteturas do sistema que são o alicerce para soluções
+                    escaláveis, seguras e inovadoras.
+                </p>
+            </div>
+        </section>
+        <section class="apresentacao__metricas__numeros">
+            <div class="apresentacao__metricas__numeros__requisicoes">
+                <h3 class="apresentacao__metricas__numeros__requisicoes_numero">+12k</h3>
+                <p class="apresentacao__metricas__numeros__requisicoes_texto">Requisições diárias</p>
+            </div>
+            <div class="apresentacao__metricas__numeros__clientes__satisfeitos">
+                <h3 class="apresentacao__metricas__numeros__clientes__satisfeitos__quantidade">+20</h3>
+                <p class="apresentacao__metricas__numeros__clientes__satisfeitos__texto">Clientes satisfeitos</p>
+            </div>
+            <div class="apresentacao__metricas__anos__experiencia">
+                <h3 class="apresentacao__metricas__anos__experiencia__quantidade">4</h3>
+                <p class="apresentacao__metricas__anos__experiencia__texto">Anos de experiência</p>
+            </div>
+            <div class="apresentacao__metricas__horas__suporte">
+                <h3 class="apresentacao__metricas__horas__suporte__numero__horas">24h</h3>
+                <p class="apresentacao__metricas__horas__suporte__texto">Suporte</p>
+            </div>
+        </section>
+        <section class="apresentacao__avaliacao__clientes">
+            <img class="apresentacao__avaliacao__clientes__imagem__virgula" src="..\..\assests\images\quotation.svg"
+                alt="">
+        </section>
+        <section class="carousel__avaliacao">
+            <div class="carousel__container">
+                <div id="slide_1" class="carousel__slide shown">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam deserunt quia quibusdam numquam quod nihil at ipsam asperiores nobis reiciendis accusantium, vitae velit, eos excepturi, vero ipsum fuga eum voluptatem. 1</div>
+                <div id="slide_2" class="carousel__slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo inventore rerum odio beatae sunt. Aliquam, dolores provident libero facilis voluptates nobis deleniti doloremque eum eligendi placeat voluptate, iste non!</div>
+            </div>
+            <div class="carousel__actions">
+                <div id="bol_1" class="carousel__bol selected"></div>
+                <div id="bol_2" class="carousel__bol"></div>
+            </div>
+        </section>
+        <section class="contato">
+            <h1 class="contato__titulo"><strong>Preparado para começar?</strong></h1>
+            <button class="btn__Contato"><a class="btn__Contato__Style" href=""></a>Entre em contato!</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <img src=".assests\images\white_icon_transparent_background-p-500.png" alt="">
+        <button></button>
+    </footer>
+</body>
 
-    </body>
-</main>
-<!-- <footer class="rodape">
-    <img src=".assests\images\white_icon_transparent_background-p-500.png" alt="">
-    <button></button>
-</footer> -->
+<script>
+    $(() => {
+        $('.carousel__bol').on('click', (el) => {
+            const className = el.currentTarget.className
+            
+            if(!className.includes('selected')) {
+                $(".carousel__bol").removeClass("selected");
+                el.currentTarget.className += " selected";
+
+                let id = el.currentTarget.id;
+                id = id.replace("bol_", "");
+
+                $(".carousel__slide").removeClass("shown");
+                $(`#slide_${id}`).addClass("shown");
+            }
+        })
+    })
+</script>
 
 </html>
