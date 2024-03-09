@@ -20,11 +20,13 @@
                     Caiera Dev é a ponte para seu sucesso digital.
                 </h6>
 
-                <button onclick="" class="apresentacao__slogan__conteiner__link__botao">
-                    <a class="btnWhatsapp" href="https://api.whatsapp.com/send?phone=51-9966048411"><strong>Faça um orçamento</strong></a>
-                    </button>
-
+                <button onclick="window.location.href='https://wa.me/55519966048411'" target="_blank"
+                    class="apresentacao__slogan__conteiner__link__botao">
+                    <a class="btnWhatsapp" href="#" target="_blank">
+                        <strong>Faça um orçamento</strong>
+                    </a>
                 </button>
+
                 <img id="flechinha" src="..\..\assests\images\arrow.svg" alt="">
             </div>
         </section>
@@ -94,8 +96,12 @@
         </section>
         <section class="carousel__avaliacao">
             <div class="carousel__container">
-                <div id="slide_1" class="carousel__slide shown">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam deserunt quia quibusdam numquam quod nihil at ipsam asperiores nobis reiciendis accusantium, vitae velit, eos excepturi, vero ipsum fuga eum voluptatem. 1</div>
-                <div id="slide_2" class="carousel__slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illo inventore rerum odio beatae sunt. Aliquam, dolores provident libero facilis voluptates nobis deleniti doloremque eum eligendi placeat voluptate, iste non!</div>
+                <div id="slide_1" class="carousel__slide shown">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit. Aperiam deserunt quia quibusdam numquam quod nihil at ipsam asperiores nobis reiciendis
+                    accusantium, vitae velit, eos excepturi, vero ipsum fuga eum voluptatem. 1</div>
+                <div id="slide_2" class="carousel__slide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                    illo inventore rerum odio beatae sunt. Aliquam, dolores provident libero facilis voluptates nobis
+                    deleniti doloremque eum eligendi placeat voluptate, iste non!</div>
             </div>
             <div class="carousel__actions">
                 <div id="bol_1" class="carousel__bol selected"></div>
@@ -104,12 +110,32 @@
         </section>
         <section class="contato">
             <h1 class="contato__titulo"><strong>Preparado para começar?</strong></h1>
-            <button class="btn__Contato"><a class="btn__Contato__Style" href=""></a>Entre em contato!</button>
+            <button class="btn__Contato"><a class="btn__Contato__Style" href=""></a><strong>Entre em
+                    contato!</strong></button>
+        </section>
+        <section class="newsletter">
+            <div class="newsletter__conteiner">
+                <h1 class="newsletter__titulo"><strong>Receba atualizações sobre a Caiera Dev</strong></h1>
+                <p class="newsletter__descricao">Novos serviços, descontos, novidades e materiais de aprendizado</p>
+                <label class="inputTextButton" for="">
+                    <input class="inputTextButton__input" type="text" placeholder="Insira seu email">
+                    <button class="inputTextButton__button"><strong>Inscreva-se</strong></button>
+                </label>
+            </div>
         </section>
     </main>
     <footer class="rodape">
-        <img src=".assests\images\white_icon_transparent_background-p-500.png" alt="">
-        <button></button>
+        <img class="logo__image" src="..\..\assests\images\white_icon_transparent_background.png" alt="">
+        <div class="images__conteiner">
+            <a  href="https://www.instagram.com/caieradev/" target="_blank">
+                <img class="instagram__image" src="..\..\assests\images\instagram-white-icon.webp" alt="Instagram">
+            </a>
+            <a  href="https://www.linkedin.com/in/caiomiguelfernandes/" target="_blank">
+                <img class="linkedin__image" src="..\..\assests\images\linkedin.png" alt="Linkedin">
+            </a>
+        </div>
+        <p class="rodape__direitos">© Copyright Caiera Dev - Todos os direitos reservados.</p>
+        
     </footer>
 </body>
 
@@ -117,8 +143,8 @@
     $(() => {
         $('.carousel__bol').on('click', (el) => {
             const className = el.currentTarget.className
-            
-            if(!className.includes('selected')) {
+
+            if (!className.includes('selected')) {
                 $(".carousel__bol").removeClass("selected");
                 el.currentTarget.className += " selected";
 
