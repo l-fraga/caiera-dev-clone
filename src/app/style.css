@@ -30,6 +30,38 @@ html {
     overflow-y: auto;
 }
 
+.cabecalho {
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    height: 30px;
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+.cabecalho__imagem {
+   width: 200px;
+   position: relative;
+   right: 54%;
+}
+
+
+.navegacao a {
+    text-decoration: none;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-right: 15px;
+}
+
 .apresentacao__slogan__conteiner {
     padding-left: 100px;
 }
@@ -101,6 +133,12 @@ html {
     justify-content: center;
     font-size: 13px;
     text-align: center;
+
+}
+
+.apresentacao__sobre .active {
+    opacity: 1;
+
 }
 
 .apresentacao__sobre__imagem {
@@ -116,7 +154,7 @@ html {
 }
 
 
-.apresentacao__metricas {
+.apresentacao__servicos {
     background-color: white;
     height: 150px;
     display: flex;
@@ -128,8 +166,12 @@ html {
     font-style: normal;
 
 }
+.apresentacao__servicos .active {
+    opacity: 1;
 
-.apresentacao__metricas__consultoria {
+}
+
+.apresentacao__servicos__consultoria {
     width: 710px;
     margin: 100px;
     font-size: 20px;
@@ -141,20 +183,20 @@ html {
 
 
 
-.apresentacao__metricas__consultoria__titulo {
+.apresentacao__servicos__consultoria__titulo {
     font-size: 12px;
     gap: 50px;
     color: gray
 }
 
-.apresentacao__metricas__consultoria__paragrafo {
+.apresentacao__servicos__consultoria__paragrafo {
     font-size: 12px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.apresentacao__metricas__integracoes {
+.apresentacao__servicos__integracoes {
     width: 710px;
     font-size: 20px;
     margin-top: 100px;
@@ -166,20 +208,20 @@ html {
     font-style: normal;
 }
 
-.apresentacao__metricas__integracoes__titulo {
+.apresentacao__servicos__integracoes__titulo {
     font-size: 12px;
     padding-bottom: 10px;
     color: gray
 }
 
-.apresentacao__metricas__integracoes__paragrafo {
+.apresentacao__servicos__integracoes__paragrafo {
     font-size: 12px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.apresentacao__metricas__arquitetura {
+.apresentacao__servicos__arquitetura {
     width: 710px;
     margin: 100px;
     font-size: 20px;
@@ -191,13 +233,13 @@ html {
     font-style: normal;
 }
 
-.apresentacao__metricas__arquitetura__titulo {
+.apresentacao__servicos__arquitetura__titulo {
     font-size: 12px;
     padding-bottom: 10px;
     color: gray
 }
 
-.apresentacao__metricas__arquitetura__paragrafo {
+.apresentacao__servicos__arquitetura__paragrafo {
     font-size: 12px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -205,9 +247,9 @@ html {
 
 }
 
-.apresentacao__metricas__numeros {
+.apresentacao__servicos__numeros {
     background-color: white;
-    height: 150px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -215,7 +257,7 @@ html {
 
 }
 
-.apresentacao__metricas__numeros__requisicoes {
+.apresentacao__servicos__numeros__requisicoes {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,20 +266,20 @@ html {
     right: 80%
 }
 
-.apresentacao__metricas__numeros__requisicoes_numero {
+.apresentacao__servicos__numeros__requisicoes_numero {
     font-size: 36px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.apresentacao__metricas__numeros__requisicoes_texto {
+.apresentacao__servicos__numeros__requisicoes_texto {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.apresentacao__metricas__numeros__clientes__satisfeitos {
+.apresentacao__servicos__numeros__clientes__satisfeitos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,20 +288,20 @@ html {
     right: 57%
 }
 
-.apresentacao__metricas__numeros__clientes__satisfeitos__quantidade {
+.apresentacao__servicos__numeros__clientes__satisfeitos__quantidade {
     font-size: 36px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.apresentacao__metricas__numeros__clientes__satisfeitos__texto {
+.apresentacao__servicos__numeros__clientes__satisfeitos__texto {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.apresentacao__metricas__anos__experiencia {
+.apresentacao__servicos__anos__experiencia {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,20 +310,20 @@ html {
     right: 33%
 }
 
-.apresentacao__metricas__anos__experiencia__quantidade {
+.apresentacao__servicos__anos__experiencia__quantidade {
     font-size: 36px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.apresentacao__metricas__anos__experiencia__texto {
+.apresentacao__servicos__anos__experiencia__texto {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.apresentacao__metricas__horas__suporte {
+.apresentacao__servicos__horas__suporte {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -290,14 +332,14 @@ html {
     right: 15%
 }
 
-.apresentacao__metricas__horas__suporte__numero__horas {
+.apresentacao__servicos__horas__suporte__numero__horas {
     font-size: 36px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.apresentacao__metricas__horas__suporte__texto {
+.apresentacao__servicos__horas__suporte__texto {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -372,6 +414,10 @@ TERMINAR O CARROSEL
     gap: 15px;
 }
 
+.contato .active{
+    opacity: 1;
+}
+
 .contato__titulo {
     color: white;
     font-size: 35px;
@@ -403,6 +449,10 @@ TERMINAR O CARROSEL
     align-items: center;
     justify-content: center;
 
+}
+
+.newsletter .active{
+    opacity: 1;
 }
 
 .newsletter__conteiner {
@@ -498,4 +548,14 @@ TERMINAR O CARROSEL
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.whatsappBtnImage{
+    height: 100px;
+    position: absolute;
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
 }

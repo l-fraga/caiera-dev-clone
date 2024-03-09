@@ -8,6 +8,15 @@
     <title>Clone Caiera Dev BR</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
+<header class="cabecalho">
+    <img class="cabecalho__imagem" src="..\..\assests\images\caiera-p-500.png" alt="">
+    <nav class="navegacao">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+        <a href="#newsletter">Newsletter</a>
+    </nav>
+</header>
 
 <body>
     <main>
@@ -20,9 +29,8 @@
                     Caiera Dev é a ponte para seu sucesso digital.
                 </h6>
 
-                <button onclick="window.location.href='https://wa.me/55519966048411'" target="_blank"
-                    class="apresentacao__slogan__conteiner__link__botao">
-                    <a class="btnWhatsapp" href="#" target="_blank">
+                <button class="apresentacao__slogan__conteiner__link__botao">
+                    <a class="btnWhatsapp" href="https://wa.me/55519966048411 " id="whatsappLink" target="_blank">
                         <strong>Faça um orçamento</strong>
                     </a>
                 </button>
@@ -30,7 +38,7 @@
                 <img id="flechinha" src="..\..\assests\images\arrow.svg" alt="">
             </div>
         </section>
-        <section class="apresentacao__sobre">
+        <section id="sobre" class="apresentacao__sobre active">
             <img class="apresentacao__sobre__imagem"
                 src="..\..\assests\images\white_logo_transparent_background-copy-p-2600.png" alt="caiera.png">
             <p class="apresentacao__sobre__paragrafo"><strong>Na Caiera Dev</strong>, construimos mais do que software;
@@ -41,53 +49,53 @@
                 garantindo que sua operação nunca pare. Escolha a parceria que entende a importância da confiança na
                 tecnologia.</p>
         </section>
-        <section class="apresentacao__metricas">
-            <div class="apresentacao__metricas__consultoria">
-                <p class="apresentacao__metricas__consultoria__titulo">
+        <section id="servicos" class="apresentacao__servicos active">
+            <div class="apresentacao__servicos__consultoria">
+                <p class="apresentacao__servicos__consultoria__titulo">
                     CONSULTORIA
                 </p>
                 <h3>
                     <strong>Orientação Estratégica</strong>
                 </h3>
-                <p class="apresentacao__metricas__consultoria__paragrafo">
+                <p class="apresentacao__servicos__consultoria__paragrafo">
                     Nossas consultoria especializada navega pela complexidade tecnológica para impulsionar
                     atransformação digital do seu negócio.</p>
             </div>
-            <div class="apresentacao__metricas__integracoes">
-                <p class="apresentacao__metricas__integracoes__titulo">
+            <div class="apresentacao__servicos__integracoes">
+                <p class="apresentacao__servicos__integracoes__titulo">
                     INTEGRAÇÕES
                 </p>
                 <h3><strong>Conexões que <br>Impulsionam</strong></h3>
-                <p class="apresentacao__metricas__integracoes__paragrafo">
+                <p class="apresentacao__servicos__integracoes__paragrafo">
                     Criamos Integrações de APIs com alto desempenho para unificar
                     seus sistemas e acelerar o crescimento empresarial.
                 </p>
             </div>
-            <div class="apresentacao__metricas__arquitetura">
-                <p class="apresentacao__metricas__arquitetura__titulo">ARQUITETURA</p>
+            <div class="apresentacao__servicos__arquitetura">
+                <p class="apresentacao__servicos__arquitetura__titulo">ARQUITETURA</p>
                 <h3><strong>Estruturas para o <br> Futuro</strong></h3>
-                <p class="apresentacao__metricas__arquitetura__paragrafo">
+                <p class="apresentacao__servicos__arquitetura__paragrafo">
                     Desenhamos arquiteturas do sistema que são o alicerce para soluções
                     escaláveis, seguras e inovadoras.
                 </p>
             </div>
         </section>
-        <section class="apresentacao__metricas__numeros">
-            <div class="apresentacao__metricas__numeros__requisicoes">
-                <h3 class="apresentacao__metricas__numeros__requisicoes_numero">+12k</h3>
-                <p class="apresentacao__metricas__numeros__requisicoes_texto">Requisições diárias</p>
+        <section class="apresentacao__servicos__numeros">
+            <div class="apresentacao__servicos__numeros__requisicoes">
+                <h3 class="apresentacao__servicos__numeros__requisicoes_numero">+12k</h3>
+                <p class="apresentacao__servicos__numeros__requisicoes_texto">Requisições diárias</p>
             </div>
-            <div class="apresentacao__metricas__numeros__clientes__satisfeitos">
-                <h3 class="apresentacao__metricas__numeros__clientes__satisfeitos__quantidade">+20</h3>
-                <p class="apresentacao__metricas__numeros__clientes__satisfeitos__texto">Clientes satisfeitos</p>
+            <div class="apresentacao__servicos__numeros__clientes__satisfeitos">
+                <h3 class="apresentacao__servicos__numeros__clientes__satisfeitos__quantidade">+20</h3>
+                <p class="apresentacao__servicos__numeros__clientes__satisfeitos__texto">Clientes satisfeitos</p>
             </div>
-            <div class="apresentacao__metricas__anos__experiencia">
-                <h3 class="apresentacao__metricas__anos__experiencia__quantidade">4</h3>
-                <p class="apresentacao__metricas__anos__experiencia__texto">Anos de experiência</p>
+            <div class="apresentacao__servicos__anos__experiencia">
+                <h3 class="apresentacao__servicos__anos__experiencia__quantidade">4</h3>
+                <p class="apresentacao__servicos__anos__experiencia__texto">Anos de experiência</p>
             </div>
-            <div class="apresentacao__metricas__horas__suporte">
-                <h3 class="apresentacao__metricas__horas__suporte__numero__horas">24h</h3>
-                <p class="apresentacao__metricas__horas__suporte__texto">Suporte</p>
+            <div class="apresentacao__servicos__horas__suporte">
+                <h3 class="apresentacao__servicos__horas__suporte__numero__horas">24h</h3>
+                <p class="apresentacao__servicos__horas__suporte__texto">Suporte</p>
             </div>
         </section>
         <section class="apresentacao__avaliacao__clientes">
@@ -108,12 +116,17 @@
                 <div id="bol_2" class="carousel__bol"></div>
             </div>
         </section>
-        <section class="contato">
+        <section id="contato" class="contato active">
             <h1 class="contato__titulo"><strong>Preparado para começar?</strong></h1>
-            <button class="btn__Contato"><a class="btn__Contato__Style" href=""></a><strong>Entre em
-                    contato!</strong></button>
+            <button class="btn__Contato">
+                <a class="btn__Contato__Style" href="https://wa.me/55519966048411 " id="whatsappLink" target="_blank">
+                    <strong>
+                        Entre em contato!
+                    </strong>
+                </a>
+            </button>
         </section>
-        <section class="newsletter">
+        <section id="newsletter" class="newsletter active">
             <div class="newsletter__conteiner">
                 <h1 class="newsletter__titulo"><strong>Receba atualizações sobre a Caiera Dev</strong></h1>
                 <p class="newsletter__descricao">Novos serviços, descontos, novidades e materiais de aprendizado</p>
@@ -127,16 +140,21 @@
     <footer class="rodape">
         <img class="logo__image" src="..\..\assests\images\white_icon_transparent_background.png" alt="">
         <div class="images__conteiner">
-            <a  href="https://www.instagram.com/caieradev/" target="_blank">
+            <a href="https://www.instagram.com/caieradev/" target="_blank">
                 <img class="instagram__image" src="..\..\assests\images\instagram-white-icon.webp" alt="Instagram">
             </a>
-            <a  href="https://www.linkedin.com/in/caiomiguelfernandes/" target="_blank">
+            <a href="https://www.linkedin.com/in/caiomiguelfernandes/" target="_blank">
                 <img class="linkedin__image" src="..\..\assests\images\linkedin.png" alt="Linkedin">
             </a>
         </div>
         <p class="rodape__direitos">© Copyright Caiera Dev - Todos os direitos reservados.</p>
-        
+
     </footer>
+    <a href="https://wa.me/55519966048411" id="whatsappLink" target="_blank">
+        <img class="whatsappBtnImage" src="..\..\assests\images\3670051-p-500.png" alt="">
+    </a>
+
+
 </body>
 
 <script>
@@ -156,6 +174,37 @@
             }
         })
     })
+
+
 </script>
+
+<script>
+    $(document).ready(function () {
+        // Adiciona um manipulador de eventos de clique a todos os links de navegação
+        $('nav a').on('click', function (e) {
+            e.preventDefault(); // Evita o comportamento padrão do link
+
+            var targetDiv = $(this).attr('href'); // Obtém o destino da navegação
+            $('html, body').animate({
+                scrollTop: $(targetDiv).offset().top // Desloca suavemente até o topo da div de destino
+            }, 1000); // Ajuste a velocidade da animação conforme necessário
+
+            // Adiciona/remova classes para transição de estilo
+            $('.content').removeClass('active');
+            $(targetDiv).addClass('active');
+        });
+    });
+</script>
+
+<script>
+    // Adiciona um evento de clique à imagem
+    document.getElementById('whatsappLink').addEventListener('click', function (event) {
+        // Impede o comportamento padrão do link
+        event.preventDefault();
+        // Abre a URL em uma nova aba usando JavaScript
+        window.open(this.href, '_blank');
+    });
+</script>
+
 
 </html>
